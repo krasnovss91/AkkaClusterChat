@@ -1,7 +1,5 @@
 package chat.actors
 
-import akka.actor.{ActorLogging, ActorRef}
-
 sealed trait Message
 case class PublishMessage(message: String) extends Message
 case class PrivateMessage(message: String) extends Message
